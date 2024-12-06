@@ -29,18 +29,18 @@
           <button class="add__item_button">Add</button>
         </div>
       </section>
-      <section>
+      <section class="todo__items">
         <h3>Todo</h3>
-        <ul>
-          <li>
-            <label>
-              <input type="checkbox">
+        <ul class="tasks__list">
+          <li class="task__item">
+            <label for="task__item_checkbox">
+              <input type="checkbox" id="task__item_checkbox">
             </label>
-            <label>
-              <input type="text" value="Pay Bills">
+            <label for="task__item">
+              <input type="text" class="todo__item_input" id="task__item" value="Pay Bills">
             </label>
-            <button class="edit">Edit</button>
-            <button>
+            <button class="task__item_edit_button">Edit</button>
+            <button class="task__item_remove_button">
               <img src="./remove.svg" alt="Edit icon">
             </button>
           </li>
