@@ -46,15 +46,18 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="completed__items">
         <h3>Completed</h3>
-        <ul id="completed-tasks">
-          <li>
-            <input type="checkbox" checked>
-            <label class="task">See the Doctor</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete">
+        <ul class="completed__list">
+          <li class="completed__item task__item">
+            <label for="completed__item_checkbox">
+              <input type="checkbox" id="completed__item_checkbox" checked>
+            </label>
+            <label for="completed__task__item">
+              <input type="text" class="task__item_input" id="completed__task__item" value="See the Doctor">
+            </label>
+            <button class="task__item_edit_button">Edit</button>
+            <button class="task__item_remove_button">
               <img src="./remove.svg" alt="Edit icon">
             </button>
           </li>
