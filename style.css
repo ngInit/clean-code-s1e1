@@ -139,6 +139,12 @@ html,
     border: 1px solid var(--secondary-border-color);
 }
 
+.task__item_input:disabled {
+    color: var(--primary-color);
+    border: 1px solid transparent;
+    background: none;
+}
+
 .task__item_input:focus {
     color: var(--primary-color);
 }
