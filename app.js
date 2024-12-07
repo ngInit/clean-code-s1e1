@@ -68,6 +68,13 @@ function editTask(event) {
     }
 }
 
+function deleteTask(event) {
+    const removeButton = event.target.closest('.task__item_remove_button');
+    if (removeButton) {
+        removeButton.parentElement.remove();
+    }
+}
+
 newItem.addEventListener('click', (event) => {
     let newTask = newItem.querySelector('.task__item_input');
     const addButton = event.target.closest('.task__item_button');
@@ -77,7 +84,10 @@ newItem.addEventListener('click', (event) => {
     }
 })
 
-todoItems.addEventListener('click', (event) => editTask(event));
+todoItems.addEventListener('click', (event) => {
+    editTask(event);
+    deleteTask(event);
+});
 
 completedItems.addEventListener('click', (event) => editTask(event));
 
