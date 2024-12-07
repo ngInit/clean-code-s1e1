@@ -59,12 +59,13 @@ function addTask(newTask) {
 
 function editTask(event) {
     const editButton = event.target.closest('.task__item_button');
+    const editState = editButton?.previousElementSibling.lastElementChild;
     if (editButton?.innerText === 'Edit') {
         editButton.innerText = 'Save';
-        editButton.previousElementSibling.disabled = false;
+        editState.disabled = false;
     } else if (editButton?.innerText === 'Save') {
         editButton.innerText = 'Edit';
-        editButton.previousElementSibling.disabled = true;
+        editState.disabled = true;
     }
 }
 
