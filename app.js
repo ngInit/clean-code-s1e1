@@ -106,16 +106,6 @@ function checkCompleteness(event) {
     }
 }
 
-function moveToTodo(currentTask) {
-    const tasksList = listsOfItems[0].querySelector('.tasks__list');
-    tasksList.appendChild(currentTask);
-}
-
-function moveToCompleted(currentTask) {
-    const tasksList = listsOfItems[1].querySelector('.tasks__list');
-    tasksList.appendChild(currentTask);
-}
-
 addListeners();
 
 /*
