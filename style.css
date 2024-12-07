@@ -155,6 +155,7 @@ html,
 
 .completed__item > .task__item_input {
     text-decoration: line-through;
+    color: var(--secondary-color);
 }
 
 @media screen and (max-width: 768px) {
