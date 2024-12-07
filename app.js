@@ -89,7 +89,10 @@ todoItems.addEventListener('click', (event) => {
     deleteTask(event);
 });
 
-completedItems.addEventListener('click', (event) => editTask(event));
+completedItems.addEventListener('click', (event) => {
+    editTask(event);
+    deleteTask(event);
+});
 
 /*
 var taskInput=document.getElementById("new-task");
