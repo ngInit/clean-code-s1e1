@@ -40,12 +40,7 @@ class Task {
         deleteButtonImage.alt = 'Delete icon';
         itemLabel.append(itemCheckbox, itemInput)
         itemDeleteButton.appendChild(deleteButtonImage);
-        listItem.append(
-            itemLabel,
-            itemCheckbox,
-            itemInput,
-            itemButton,
-            itemDeleteButton);
+        listItem.append(itemLabel, itemButton, itemDeleteButton);
         return listItem;
     }
 
