@@ -1,4 +1,14 @@
 /* Basic Style */
+body,
+html,
+* {
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato, sans-serif;
+    font-size: 1rem;
+}
 body {
     background-color: #f8f8f8;
     color: #333;
