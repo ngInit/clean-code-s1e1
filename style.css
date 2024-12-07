@@ -67,6 +67,10 @@ html,
     border-top: 2px solid #000000;
 }
 
+.todo__items {
+    padding-bottom: 30px;
+}
+
 .tasks__list {
     margin-top: 10px;
     border-top: 2px solid #000000;
