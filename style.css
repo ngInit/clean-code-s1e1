@@ -151,6 +151,11 @@ html,
     text-decoration: line-through;
 }
 
+.task__item_input:disabled {
+    border: 1px solid transparent;
+    background: none;
+}
+
 @media screen and (max-width: 768px) {
     .header {
         text-align: center;
