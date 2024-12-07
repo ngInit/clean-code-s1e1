@@ -54,7 +54,6 @@ class Task {
 
 function addTask(newTask) {
     const createNewTask = new Task(newTask).createNewTask();
-    const todoList = listsOfItems[0].querySelector('.tasks__list');
     todoList.appendChild(createNewTask);
 }
 
