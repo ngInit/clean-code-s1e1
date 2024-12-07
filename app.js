@@ -38,6 +38,7 @@ class Task {
         itemDeleteButton.classList.add('task__item_remove_button');
         deleteButtonImage.src = './remove.svg';
         deleteButtonImage.alt = 'Delete icon';
+        itemLabel.append(itemCheckbox, itemInput)
         itemDeleteButton.appendChild(deleteButtonImage);
         listItem.append(
             itemLabel,
