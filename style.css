@@ -48,7 +48,9 @@ html,
     display: block;
     width: 500px;
     margin: 0 auto;
-    padding-top: 45px;
+    padding-top: 46px;
+}
+
 .add__item {
     display: flex;
     flex-direction: column;
