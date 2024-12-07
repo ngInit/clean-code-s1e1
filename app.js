@@ -9,6 +9,10 @@ newItem.addEventListener('click', (event) => {
     }
 })
 
+function addTask(newTask) {
+
+}
+
 /*
 var taskInput=document.getElementById("new-task");
 var addButton=document.getElementsByTagName("button")[0];
