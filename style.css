@@ -77,6 +77,10 @@ html,
 }
 
 .task__item_remove_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 60px;
     height: 32px;
     border: none;
