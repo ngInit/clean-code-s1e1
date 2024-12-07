@@ -153,7 +153,7 @@ html,
     transform: rotateZ(0);
 }
 
-.completed__item > .task__item_input {
+.completed__item > .task__item_input:disabled {
     text-decoration: line-through;
     color: var(--secondary-color);
 }
