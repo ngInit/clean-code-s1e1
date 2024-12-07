@@ -9,6 +9,12 @@ newItem.addEventListener('click', (event) => {
     }
 })
 
+function addTask(newTask) {
+    const createNewTask = new Task(newTask).createNewTask();
+    const todoList = todoItems.querySelector('.tasks__list');
+    todoList.appendChild(createNewTask);
+}
+
 /*
 var taskInput=document.getElementById("new-task");
 var addButton=document.getElementsByTagName("button")[0];
