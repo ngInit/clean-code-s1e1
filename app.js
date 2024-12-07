@@ -1,5 +1,7 @@
 const newItem = document.querySelector('.add__item_container');
 const listsOfItems = document.querySelectorAll('.todo__items,.completed__items');
+const todoList = listsOfItems[0].querySelector('.tasks__list');
+const completedList = listsOfItems[1].querySelector('.tasks__list');
 
 class Task {
     constructor(title) {
@@ -95,12 +97,12 @@ function addListeners() {
 
 function checkCompleteness(event) {
     const checkBox = event.target.closest('input[type="checkbox"]');
-    const isCompleted = checkBox.checked;
+    const isCompleted = checkBox?.checked;
     if (checkBox && isCompleted) {
-        moveToCompleted(checkBox.parentElement);
+        completedList.appendChild(checkBox.parentElement);
     }
     if (checkBox && !isCompleted) {
-        moveToTodo(checkBox.parentElement);
+        todoList.appendChild(checkBox.parentElement);
     }
 }
 
