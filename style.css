@@ -130,6 +130,10 @@ html,
     border: 1px solid #dddddd;
 }
 
+.task__item_remove_button img:hover {
+    transform: rotateZ(0);
+}
+
 /*.task-row-wrapper {*/
 /*    display: flex;*/
 /*}*/
