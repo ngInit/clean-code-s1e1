@@ -1,3 +1,4 @@
+/*
 var taskInput=document.getElementById("new-task");
 var addButton=document.getElementsByTagName("button")[0];
 var incompleteTaskHolder=document.getElementById("incompleteTasks");
@@ -103,3 +104,4 @@ for (var i=0; i<incompleteTaskHolder.children.length;i++){
 for (var i=0; i<completedTasksHolder.children.length;i++){
     bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
 }
+*/
