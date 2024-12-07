@@ -95,8 +95,7 @@ html,
 }
 
 .task__item_input {
-    width: 56%;
-    display: inline-block;
+    height: 21px;
     flex-grow: 1;
 }
 
