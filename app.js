@@ -1,6 +1,5 @@
 const newItem = document.querySelector('.add__item_container');
-const todoItems = document.querySelector('.todo__items');
-const completedItems = document.querySelector('.completed__items');
+const listsOfItems = document.querySelectorAll('.todo__items,.completed__items');
 
 class Task {
     constructor(title) {
@@ -84,15 +83,16 @@ newItem.addEventListener('click', (event) => {
     }
 })
 
-todoItems.addEventListener('click', (event) => {
-    editTask(event);
-    deleteTask(event);
-});
+function addListeners() {
+    listsOfItems.forEach((itemsList) => {
+        itemsList.addEventListener('click', (event) => {
+            editTask(event);
+            deleteTask(event);
+        });
+    })
+}
 
-completedItems.addEventListener('click', (event) => {
-    editTask(event);
-    deleteTask(event);
-});
+addListeners();
 
 /*
 var taskInput=document.getElementById("new-task");
