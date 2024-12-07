@@ -1,4 +1,5 @@
 const newItem = document.querySelector('.add__item_container');
+const todoItems = document.querySelector('.todo__items');
 
 newItem.addEventListener('click', (event) => {
     let newTask = newItem.querySelector('.task__item_input');
