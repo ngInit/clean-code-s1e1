@@ -97,11 +97,9 @@ function checkCompleteness(event) {
     const checkBox = event.target.closest('input[type="checkbox"]');
     const isCompleted = checkBox.checked;
     if (checkBox && isCompleted) {
-        checkBox.parentElement.classList.add('completed__item');
         moveToCompleted(checkBox.parentElement);
     }
     if (checkBox && !isCompleted) {
-        checkBox.parentElement.classList.remove('completed__item');
         moveToTodo(checkBox.parentElement);
     }
 }
