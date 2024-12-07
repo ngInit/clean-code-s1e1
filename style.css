@@ -119,6 +119,10 @@ html,
     border-bottom: 1px solid #eeeeee;
 }
 
+.item__checkbox {
+    margin: 10px;
+}
+
 .task__item_input {
     height: 21px;
     flex-grow: 1;
