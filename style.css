@@ -64,6 +64,23 @@ html,
     padding-top: 20px;
     border-top: 2px solid #000000;
 }
+
+.task__item_remove_button {
+    width: 60px;
+    height: 32px;
+    border: none;
+    font-size: 15px;
+    color: #888888;
+    background: none;
+    cursor: pointer;
+}
+
+.task__item_remove_button img {
+    height: 2em;
+    transform: rotateZ(45deg);
+    transition: transform 200ms ease-in;
+}
+
 }
 
 .task__item_input {
