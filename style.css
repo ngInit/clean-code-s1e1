@@ -67,6 +67,11 @@ html,
     border-top: 2px solid #000000;
 }
 
+.tasks__list {
+    margin-top: 10px;
+    border-top: 2px solid #000000;
+}
+
 .task__item_remove_button {
     width: 60px;
     height: 32px;
