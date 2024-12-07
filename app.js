@@ -1,6 +1,55 @@
 const newItem = document.querySelector('.add__item_container');
 const todoItems = document.querySelector('.todo__items');
 
+class Task {
+    constructor(title) {
+        this.title = title;
+    }
+
+    #getNewIndex() {
+        return Date.now();
+    }
+
+    #createTask() {
+        const listItem = document.createElement('li');
+        const itemLabel = document.createElement('label');
+        const itemCheckbox = document.createElement('input');
+        const itemInput = document.createElement('input');
+        const itemButton = document.createElement('button');
+        const itemDeleteButton = document.createElement('button');
+        const deleteButtonImage = document.createElement('img');
+        const newIndex = this.#getNewIndex().toString();
+        const newId = `task__item_${newIndex}`;
+        listItem.classList.add('task__item');
+        itemLabel.id = newId;
+        itemCheckbox.type = 'checkbox';
+        itemCheckbox.classList.add('item__checkbox');
+        itemCheckbox.ariaLabel = newId;
+        itemInput.type = 'text';
+        itemInput.classList.add('task__item_input');
+        itemInput.ariaLabel = newId;
+        itemInput.value = this.title;
+        itemInput.disabled = true;
+        itemButton.classList.add('task__item_button');
+        itemButton.innerText = 'Edit'
+        itemDeleteButton.classList.add('task__item_remove_button');
+        deleteButtonImage.src = './remove.svg';
+        deleteButtonImage.alt = 'Delete icon';
+        itemDeleteButton.appendChild(deleteButtonImage);
+        listItem.append(
+            itemLabel,
+            itemCheckbox,
+            itemInput,
+            itemButton,
+            itemDeleteButton);
+        return listItem;
+    }
+
+    createNewTask() {
+        return this.#createTask();
+    }
+}
+
 newItem.addEventListener('click', (event) => {
     let newTask = newItem.querySelector('.task__item_input');
     const addButton = event.target.closest('.task__item_button');
