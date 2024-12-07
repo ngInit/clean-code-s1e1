@@ -69,7 +69,7 @@ html,
     justify-content: flex-start;
     align-items: center;
     padding-top: 20px;
-    border-top: 2px solid #000000;
+    border-top: 2px solid var(--primary-border-color);
 }
 
 .todo__items {
@@ -78,7 +78,7 @@ html,
 
 .tasks__list {
     margin-top: 10px;
-    border-top: 2px solid #000000;
+    border-top: 2px solid var(--primary-border-color);
 }
 
 .task__item_remove_button {
@@ -116,7 +116,7 @@ html,
     align-items: center;
     height: 73px;
     padding: 20px 0;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid var(--third-border-color);
 }
 
 .item__checkbox {
