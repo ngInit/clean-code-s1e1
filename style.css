@@ -112,15 +112,15 @@ html,
 /*    outline: none;*/
 /*}*/
 
-button {
-    background: none;
-    border: 0;
-    color: #888;
-    font-size: 15px;
-    width: 60px;
-    font-family: Lato, sans-serif;
-    cursor: pointer;
-}
+/*button {*/
+/*    background: none;*/
+/*    border: 0;*/
+/*    color: #888;*/
+/*    font-size: 15px;*/
+/*    width: 60px;*/
+/*    font-family: Lato, sans-serif;*/
+/*    cursor: pointer;*/
+/*}*/
 
 /*button:hover {*/
 /*    color: #3a3A3a;*/
@@ -165,14 +165,14 @@ button {
 /*}*/
 
 /* Task list */
-li {
-    overflow: hidden;
-    padding: 20px 0;
-    border-bottom: 1px solid #eee;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+/*li {*/
+/*    overflow: hidden;*/
+/*    padding: 20px 0;*/
+/*    border-bottom: 1px solid #eee;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*}*/
 
 /*li > * {*/
 /*    vertical-align: middle;*/
