@@ -14,18 +14,18 @@ html,
     color: #333;
 }
 
-.aaa {
+.header {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
 
-.aaa img {
+.header img {
     width: 100%;
 }
 
-.aaa .more_inf {
+.header_link {
     font-family: fantasy, cursive;
 }
 
@@ -35,7 +35,7 @@ html,
 /*    }*/
 /*}*/
 
-.centered-main-page-element {
+.main {
     display: block;
     width: 500px;
     margin: 0 auto 0;
