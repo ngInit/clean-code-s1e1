@@ -23,6 +23,7 @@ class Task {
         const newIndex = this.#getNewIndex().toString();
         const newId = `task__item_${newIndex}`;
         listItem.classList.add('task__item');
+        itemLabel.classList.add('task__label');
         itemLabel.id = newId;
         itemCheckbox.type = 'checkbox';
         itemCheckbox.classList.add('item__checkbox');
