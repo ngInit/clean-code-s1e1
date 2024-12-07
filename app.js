@@ -57,7 +57,7 @@ function addTask(newTask) {
     todoList.appendChild(createNewTask);
 }
 
-function editSaveButton(event) {
+function editTask(event) {
     const editButton = event.target.closest('.task__item_button');
     if (editButton?.innerText === 'Edit') {
         editButton.innerText = 'Save';
@@ -77,9 +77,9 @@ newItem.addEventListener('click', (event) => {
     }
 })
 
-todoItems.addEventListener('click', (event) => editSaveButton(event));
+todoItems.addEventListener('click', (event) => editTask(event));
 
-completedItems.addEventListener('click', (event) => editSaveButton(event));
+completedItems.addEventListener('click', (event) => editTask(event));
 
 /*
 var taskInput=document.getElementById("new-task");
