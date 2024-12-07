@@ -28,10 +28,12 @@ class Task {
         itemCheckbox.type = 'checkbox';
         itemCheckbox.classList.add('item__checkbox');
         itemCheckbox.ariaLabel = newId;
+        itemCheckbox.name = 'task_checkbox';
         itemInput.type = 'text';
         itemInput.classList.add('task__item_input');
         itemInput.ariaLabel = newId;
         itemInput.value = this.title;
+        itemInput.name = 'task_text';
         itemInput.disabled = true;
         itemButton.classList.add('task__item_button');
         itemButton.innerText = 'Edit'
