@@ -147,6 +147,10 @@ html,
     transform: rotateZ(0);
 }
 
+.completed__item > .task__item_input {
+    text-decoration: line-through;
+}
+
 @media screen and (max-width: 768px) {
     .header {
         text-align: center;
