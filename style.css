@@ -110,6 +110,10 @@ html,
     cursor: pointer;
 }
 
+.task__item_button:hover {
+    color: var(--third-color);
+}
+
 .task__item {
     display: flex;
     justify-content: space-between;
