@@ -81,6 +81,15 @@ html,
     transition: transform 200ms ease-in;
 }
 
+.task__item_button {
+    width: 60px;
+    border: none;
+    font-size: 15px;
+    color: #888888;
+    background: none;
+    cursor: pointer;
+}
+
 }
 
 .task__item_input {
