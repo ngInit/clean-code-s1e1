@@ -97,6 +97,10 @@ html,
     cursor: pointer;
 }
 
+.completed__list {
+    padding-top: 20px;
+    border-top: 2px solid #000000;
+}
 }
 
 .task__item_input {
