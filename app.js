@@ -65,6 +65,19 @@ function addTask(newTask) {
     todoList.appendChild(createNewTask);
 }
 
+todoItems.addEventListener('click', (event) => editSaveButton(event))
+
+function editSaveButton(event) {
+    const editButton = event.target.closest('.task__item_button');
+    if (editButton?.innerText === 'Edit') {
+        editButton.innerText = 'Save';
+        editButton.previousElementSibling.disabled = false;
+    } else if (editButton?.innerText === 'Save') {
+        editButton.innerText = 'Edit';
+        editButton.previousElementSibling.disabled = true;
+    }
+}
+
 /*
 var taskInput=document.getElementById("new-task");
 var addButton=document.getElementsByTagName("button")[0];
