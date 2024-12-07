@@ -16,9 +16,10 @@ html,
 }
 
 .header {
+    display: flex;
+    flex-direction: column;
     width: 500px;
     margin: 0 auto;
-    display: block;
     text-align: right;
 }
 
