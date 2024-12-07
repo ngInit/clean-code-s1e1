@@ -1,5 +1,6 @@
 const newItem = document.querySelector('.add__item_container');
 const todoItems = document.querySelector('.todo__items');
+const completedItems = document.querySelector('.completed__items');
 
 class Task {
     constructor(title) {
@@ -65,7 +66,8 @@ function addTask(newTask) {
     todoList.appendChild(createNewTask);
 }
 
-todoItems.addEventListener('click', (event) => editSaveButton(event))
+todoItems.addEventListener('click', (event) => editSaveButton(event));
+completedItems.addEventListener('click', (event) => editSaveButton(event));
 
 function editSaveButton(event) {
     const editButton = event.target.closest('.task__item_button');
