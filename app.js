@@ -51,23 +51,11 @@ class Task {
     }
 }
 
-newItem.addEventListener('click', (event) => {
-    let newTask = newItem.querySelector('.task__item_input');
-    const addButton = event.target.closest('.task__item_button');
-    if (addButton && newTask.value) {
-        addTask(newTask.value)
-        newTask.value = '';
-    }
-})
-
 function addTask(newTask) {
     const createNewTask = new Task(newTask).createNewTask();
     const todoList = todoItems.querySelector('.tasks__list');
     todoList.appendChild(createNewTask);
 }
-
-todoItems.addEventListener('click', (event) => editSaveButton(event));
-completedItems.addEventListener('click', (event) => editSaveButton(event));
 
 function editSaveButton(event) {
     const editButton = event.target.closest('.task__item_button');
@@ -79,6 +67,19 @@ function editSaveButton(event) {
         editButton.previousElementSibling.disabled = true;
     }
 }
+
+newItem.addEventListener('click', (event) => {
+    let newTask = newItem.querySelector('.task__item_input');
+    const addButton = event.target.closest('.task__item_button');
+    if (addButton && newTask.value) {
+        addTask(newTask.value);
+        newTask.value = '';
+    }
+})
+
+todoItems.addEventListener('click', (event) => editSaveButton(event));
+
+completedItems.addEventListener('click', (event) => editSaveButton(event));
 
 /*
 var taskInput=document.getElementById("new-task");
