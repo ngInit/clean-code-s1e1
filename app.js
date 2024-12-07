@@ -1,3 +1,14 @@
+const newItem = document.querySelector('.add__item_container');
+
+newItem.addEventListener('click', (event) => {
+    let newTask = newItem.querySelector('.task__item_input');
+    const addButton = event.target.closest('.task__item_button');
+    if (addButton && newTask.value) {
+        addTask(newTask.value)
+        newTask.value = '';
+    }
+})
+
 /*
 var taskInput=document.getElementById("new-task");
 var addButton=document.getElementsByTagName("button")[0];
