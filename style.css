@@ -139,6 +139,10 @@ html,
     border: 1px solid var(--secondary-border-color);
 }
 
+.task__item_input:focus {
+    color: var(--primary-color);
+}
+
 .task__item_remove_button img:hover {
     transform: rotateZ(0);
 }
