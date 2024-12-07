@@ -38,12 +38,6 @@ html,
     font-family: fantasy, cursive;
 }
 
-/*@media (max-width: 768px) {*/
-/*    .aaa {*/
-/*        text-align: center;*/
-/*    }*/
-/*}*/
-
 .main {
     display: block;
     width: 500px;
@@ -132,6 +126,12 @@ html,
 
 .task__item_remove_button img:hover {
     transform: rotateZ(0);
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        text-align: center;
+    }
 }
 
 /*.task-row-wrapper {*/
