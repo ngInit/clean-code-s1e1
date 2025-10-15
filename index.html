@@ -1,19 +1,118 @@
-<html>
-<HEAD><title>Todo App</title>
-<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="style.css" type="text/css" MEDIA="screen" charset="utf-8">
-</HEAD>
-<body>
-<div class="aaa"><img src="./eisenhower-matrix.jpg"><a class='more_inf' href="https://goal-life.com/page/method/matrix-eisenhower">Want more details&quest;</a></div>
-<div class="centered-main-page-element"><p id='topSectionForAddingElementToList'><label for="new-task">Add Item</label><div class="task-row-wrapper"><input id='new-task'class="task" type="text"><button>Add</button></div>
-</p><h3>Todo</h3>
-<ul id='incompleteTasks'>
-<li><input type='checkbox'><label class="task">Pay Bills</label><input type="text" class="task"><button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button></li>
-<li class="editMode"><input type="checkbox"><label class="task">Go Shopping</label><input type="text" value="Go Shopping" class="task"><button class='edit'>Save</button><button class="delete"><img src="./remove.svg"></button></li>
-</ul><h3>Completed</h3><ul id="completed-tasks"><li><input type="checkbox" checked><label class="task">See the Doctor</label><input type="text" class="task"><button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button>
-</li>
-</ul>
-</div>
-<script type="text/javascript" SRC="app.js"></script>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Todo App</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="To Do List with Matrix Eisenhower">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+            href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+            rel="stylesheet"
+            type="text/css"
+    >
+    <link rel="stylesheet" href="style.css" media="screen">
+  </head>
+  <body class="body">
+    <header class="header">
+      <img src="./eisenhower-matrix.jpg" alt="Matrix Eisenhower">
+      <a
+              class="header_link"
+              href="https://goal-life.com/page/method/matrix-eisenhower"
+      >
+        Want more details?
+      </a>
+    </header>
+    <main class="main">
+      <section class="add__item">
+        <h3 class="section__header_text">Add Item</h3>
+        <div class="add__item_container">
+          <label class="task__label" id="new__item">
+            <input
+              type="text"
+              class="task__item_input"
+              aria-label="new__item"
+              name="task_text"
+            >
+            <button class="task__item_button">Add</button>
+          </label>
+        </div>
+      </section>
+      <section class="todo__items">
+        <h3 class="section__header_text">Todo</h3>
+        <ul class="tasks__list">
+          <li class="task__item">
+            <label class="task__label" id="task__item_1733576065432">
+              <input
+                type="checkbox"
+                class="item__checkbox"
+                aria-label="task__item_1733576065432"
+                name="task_checkbox"
+              >
+              <input
+                type="text"
+                class="task__item_input"
+                aria-label="task__item_1733576065432"
+                value="Pay Bills"
+                name="task_text"
+                disabled
+              >
+            </label>
+            <button class="task__item_button">Edit</button>
+            <button class="task__item_remove_button">
+              <img src="./remove.svg" alt="Delete icon">
+            </button>
+          </li>
+          <li class="task__item">
+            <label class="task__label" id="task__item_1733576065431">
+              <input
+                type="checkbox"
+                class="item__checkbox"
+                aria-label="task__item_1733576065431"
+                name="task_checkbox"
+              >
+              <input
+                type="text"
+                class="task__item_input"
+                aria-label="task__item_1733576065431"
+                value="Go Shopping"
+                name="task_text"
+              >
+            </label>
+            <button class="task__item_button">Save</button>
+            <button class="task__item_remove_button">
+              <img src="./remove.svg" alt="Delete icon">
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section class="completed__items">
+        <h3 class="section__header_text">Completed</h3>
+        <ul class="tasks__list">
+          <li class="task__item">
+            <label class="task__label" id="completed__item_1733576065430">
+              <input
+                type="checkbox"
+                class="item__checkbox"
+                aria-label="completed__item_1733576065430"
+                name="task_checkbox"
+                checked
+              >
+              <input type="text"
+                class="task__item_input"
+                aria-label="completed__item_1733576065430"
+                value="See the Doctor"
+                name="task_text"
+                disabled
+              >
+            </label>
+            <button class="task__item_button">Edit</button>
+            <button class="task__item_remove_button">
+              <img src="./remove.svg" alt="Delete icon">
+            </button>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
 </html>
